@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {    "jsx": "react-jsx", // Ou "react" se estiver usando React 17 ou anterior
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "module": "ESNext",
+    "target": "ES6",
+    "types": ["react", "react-dom"] // Certifique-se disso
+  }
+}

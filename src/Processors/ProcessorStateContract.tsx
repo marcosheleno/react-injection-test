@@ -1,3 +1,6 @@
+import {ProcessorFunctionsContract} from "./ProcessorFunctionsContract";
+
 export interface ProcessorStateContract {
-    code: string
+    code: string | null,
+    processors: ProcessorFunctionsContract[]
 }

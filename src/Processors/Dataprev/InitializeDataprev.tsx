@@ -1,9 +1,8 @@
-import {ProcessorFunctionsContracts} from "../ProcessorFunctionsContracts";
-import {CheckMarginButton} from "./CheckMarginButton";
-import {ProcessorStateContract} from "../ProcessorStateContract";
+import {ProcessorFunctionsContract} from "../ProcessorFunctionsContract";
 
-export const InitializeDataprev = (Agreement: ProcessorStateContract): ProcessorFunctionsContracts => {
+export const InitializeDataprev = (): ProcessorFunctionsContract => {
     return {
-        BtnCheckMargin: CheckMarginButton(Agreement)
+        Code: 'dataprev',
+        BtnCheckMargin: './Dataprev/CheckMarginButton'
     }
 }

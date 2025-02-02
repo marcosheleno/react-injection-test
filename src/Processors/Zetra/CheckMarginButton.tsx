@@ -1,9 +1,5 @@
 import {JSX} from "react";
-import {ProcessorStateContract} from "../ProcessorStateContract";
 
-export const CheckMarginButton = (Agreement: ProcessorStateContract): JSX.Element => {
-    if (Agreement.code !== 'zetra')
-        return null;
-
+export const CheckMarginButton = (): JSX.Element => {
     return (<button>Checar Margem Zetra</button>);
 }

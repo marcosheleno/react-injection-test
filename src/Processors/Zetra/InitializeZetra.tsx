@@ -1,9 +1,9 @@
-import {ProcessorFunctionsContracts} from "../ProcessorFunctionsContracts";
-import {CheckMarginButton} from "./CheckMarginButton";
-import {ProcessorStateContract} from "../ProcessorStateContract";
+import {ProcessorFunctionsContract} from "../ProcessorFunctionsContract";
 
-export const InitializeZetra = (Agreement: ProcessorStateContract): ProcessorFunctionsContracts => {
+export const InitializeZetra = (): ProcessorFunctionsContract => {
+
     return {
-        BtnCheckMargin: CheckMarginButton(Agreement)
+        Code: 'zetra',
+        BtnCheckMargin: 'Zetra/CheckMarginButton'
     }
 }

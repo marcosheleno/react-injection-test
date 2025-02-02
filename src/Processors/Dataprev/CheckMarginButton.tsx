@@ -1,9 +1,5 @@
-import {JSX} from "react";
-import {ProcessorStateContract} from "../ProcessorStateContract";
-
-export const CheckMarginButton = (Agreement: ProcessorStateContract): JSX.Element => {
-    if (Agreement.code !== 'dataprev')
-        return null;
-
+const CheckMarginButton = () => {
+    console.log('a') ;
     return (<button>Checar Margem Dataprev</button>)
 }
+export default CheckMarginButton;
